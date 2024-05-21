@@ -8,8 +8,8 @@ function App() {
 
   const handleClick = (e) => {
     setCount(count++)
-    console.log("Count function: ")
     console.log(count)
+    console.log("Count function: ")
   }
   return (
     <div className="App">
@@ -26,10 +26,9 @@ function App() {
         >
           Hello from React
           <HomePage />
-          <p>Only use for branch: new-change</p>
 
-          <button onClick={handleClick}>Click to Count</button>
           <p>{count}</p>
+          <button onClick={handleClick}>Click to Count</button>
         </a>
       </header>
     </div>
