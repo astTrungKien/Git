@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Hello from React
+          <HomePage/>
         </a>
       </header>
     </div>
