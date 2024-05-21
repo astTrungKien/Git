@@ -5,11 +5,13 @@ import { useState } from 'react';
 
 function App() {
   const [count, setCount] = useState(0)
+  const [name, setName] = useState(null)
 
   const handleClick = (e) => {
     setCount(count++)
     console.log(count)
     console.log("Count function: ")
+    
   }
   return (
     <div className="App">
