@@ -1,8 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import HomePage from './pages/HomePage';
+import { useState } from 'react';
 
 function App() {
+  const [count, setCount] = useState(0)
+
+  const handleClick = (e) => {
+    setCount(count++)
+    console.log("Count function: ")
+    console.log(count)
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -17,7 +25,11 @@ function App() {
           rel="noopener noreferrer"
         >
           Hello from React
-          <HomePage/>
+          <HomePage />
+          <p>Only use for branch: new-change</p>
+
+          <button onClick={handleClick}>Click to Count</button>
+          <p>{count}</p>
         </a>
       </header>
     </div>
