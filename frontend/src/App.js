@@ -28,7 +28,7 @@ function App() {
         >
           Hello from React
           <HomePage />
-
+          <p>Hello</p>
           <p>{count}</p>
           <button onClick={handleClick}>Click to Count</button>
         </a>
